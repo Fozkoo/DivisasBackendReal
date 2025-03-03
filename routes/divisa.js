@@ -11,7 +11,7 @@ export const createDivisaRouter = ({ divisaModel }) => {
 
 
     divisasRouter.get('/actualizar/:tipoDivisa/:tipo', (req, res) => divisaController.actualizarDivisas(req, res));
-    divisasRouter.get('/actualizar/:tipoDivisa/:tipo', (req, res) => divisaController.actualizarOtrasDivisas(req, res));
+    divisasRouter.get('/actualizarDivisasAlternativas/:tipoDivisa/:tipo', (req, res) => divisaController.actualizarDivisasAlternativas(req, res));
     divisasRouter.get('/', (req, res) => divisaController.getAllDivisas(req, res));
     {/*
         divisasRouter.get('/:id', divisaController.getDivisaById)
