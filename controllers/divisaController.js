@@ -197,9 +197,4 @@ export class DivisaController {
         const divisas = await this.DivisaModel.findAll();
         res.json(divisas);
     }
-
 };
-
-
-
-
