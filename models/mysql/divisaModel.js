@@ -17,6 +17,7 @@ export const DivisaModel = sequelize.define('divisas', {
   fechaActualizacion: { type: DataTypes.STRING, allowNull: false },
   tipoDivisa: { type: DataTypes.STRING, allowNull: false },
   tipo: { type: DataTypes.STRING, allowNull: false },
+  imgUrl: { type: DataTypes.STRING, allowNull: false },
 }, {
         timestamps: false // Esto deshabilita la creación de las columnas createdAt y updatedAt
 });
